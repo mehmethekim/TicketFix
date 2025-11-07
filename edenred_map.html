@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c557c0f9a06cb8ed861eb25d1389a91e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c557c0f9a06cb8ed861eb25d1389a91e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c557c0f9a06cb8ed861eb25d1389a91e = L.map(
+                "map_c557c0f9a06cb8ed861eb25d1389a91e",
+                {
+                    center: [39.945993745239015, 32.88256459398962],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b4e00ecc74252398b06f370b2e84c74c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b4e00ecc74252398b06f370b2e84c74c.addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var marker_9473f07a7eff1bfc3734105bf9386e2f = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_3f8e5beeb60646dc1da85ce14f81cc46 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38529fface99c901fcf54bd4382efdd3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4082c142b475d8aed59a2fece73bcb8b = $(`<div id="html_4082c142b475d8aed59a2fece73bcb8b" style="width: 100.0%; height: 100.0%;">06 Cafe Restaurant<br>Yaşam Cad. No:7/1 Söğütözü Çankaya ANKARA<br>3122191863.0</div>`)[0];
+                popup_38529fface99c901fcf54bd4382efdd3.setContent(html_4082c142b475d8aed59a2fece73bcb8b);
+            
+        
+
+        marker_9473f07a7eff1bfc3734105bf9386e2f.bindPopup(popup_38529fface99c901fcf54bd4382efdd3)
+        ;
+
+        
+    
+    
+                marker_9473f07a7eff1bfc3734105bf9386e2f.setIcon(icon_3f8e5beeb60646dc1da85ce14f81cc46);
+            
+    
+            var marker_e001590377d631ede2dec5e5d35c496a = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_b77d57b2c556ae83a5912f1c2f6789a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f1d2996fa53f41ecb25167a0b13718d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b12f23d29d65f78f983287ee41d9c551 = $(`<div id="html_b12f23d29d65f78f983287ee41d9c551" style="width: 100.0%; height: 100.0%;">Ahi Piknik Cafe<br>Sıhhiye Mah. Sağlık Sokak No:5/B Çankaya Çankaya ANKARA<br>3124340465.0</div>`)[0];
+                popup_3f1d2996fa53f41ecb25167a0b13718d.setContent(html_b12f23d29d65f78f983287ee41d9c551);
+            
+        
+
+        marker_e001590377d631ede2dec5e5d35c496a.bindPopup(popup_3f1d2996fa53f41ecb25167a0b13718d)
+        ;
+
+        
+    
+    
+                marker_e001590377d631ede2dec5e5d35c496a.setIcon(icon_b77d57b2c556ae83a5912f1c2f6789a5);
+            
+    
+            var marker_0fdea21a32d2464f3756b6cdf3d6bb40 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_42267484f8642df399af847053c23b00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82a9ffedc086ca628f88c06f50f6e084 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ef796041e5302a09485f93ebab501fd = $(`<div id="html_7ef796041e5302a09485f93ebab501fd" style="width: 100.0%; height: 100.0%;">Beykoz İşkembe<br>Güzeltepe Mah. Hoşdere Cad. Yunus Nadi Sok. Çankaya Çankaya ANKARA<br>3124426868.0</div>`)[0];
+                popup_82a9ffedc086ca628f88c06f50f6e084.setContent(html_7ef796041e5302a09485f93ebab501fd);
+            
+        
+
+        marker_0fdea21a32d2464f3756b6cdf3d6bb40.bindPopup(popup_82a9ffedc086ca628f88c06f50f6e084)
+        ;
+
+        
+    
+    
+                marker_0fdea21a32d2464f3756b6cdf3d6bb40.setIcon(icon_42267484f8642df399af847053c23b00);
+            
+    
+            var marker_055ae7937c7a69e495d8fa2a0b86f599 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_68a0b0c0ae78714ecd8a7f9cd9e312eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3058ee3cce9d2e41bc58cf8a2e9ec430 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc800a2f01b97cb793a2f779a1390ff9 = $(`<div id="html_fc800a2f01b97cb793a2f779a1390ff9" style="width: 100.0%; height: 100.0%;">Bezmialem Restaurant<br>Mustafa Kemal Mah. 2128 Sok. Eskişehir Yolu No:11/A Bilkent Çankaya ANKARA<br>3122195687.0</div>`)[0];
+                popup_3058ee3cce9d2e41bc58cf8a2e9ec430.setContent(html_fc800a2f01b97cb793a2f779a1390ff9);
+            
+        
+
+        marker_055ae7937c7a69e495d8fa2a0b86f599.bindPopup(popup_3058ee3cce9d2e41bc58cf8a2e9ec430)
+        ;
+
+        
+    
+    
+                marker_055ae7937c7a69e495d8fa2a0b86f599.setIcon(icon_68a0b0c0ae78714ecd8a7f9cd9e312eb);
+            
+    
+            var marker_42c1cd813b7a77373722cc1f2c33516e = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_01ebcf1c095bfdc4f3ce906c2bb9a612 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_409723610aa3e8daefed619b91576b1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_499279e52c2fbaa684009e146db518c1 = $(`<div id="html_499279e52c2fbaa684009e146db518c1" style="width: 100.0%; height: 100.0%;">Cadde'nin Lezzeti<br>A.Öveçler Mah. Kabil Cad. No:8/B Öveçler Çankaya ANKARA<br>3124810624.0</div>`)[0];
+                popup_409723610aa3e8daefed619b91576b1f.setContent(html_499279e52c2fbaa684009e146db518c1);
+            
+        
+
+        marker_42c1cd813b7a77373722cc1f2c33516e.bindPopup(popup_409723610aa3e8daefed619b91576b1f)
+        ;
+
+        
+    
+    
+                marker_42c1cd813b7a77373722cc1f2c33516e.setIcon(icon_01ebcf1c095bfdc4f3ce906c2bb9a612);
+            
+    
+            var marker_0b01e3dd950324ce29c4c64d90ec807e = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_c4b3e9496e90f08cdd73655a4a6453b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_07c6997cb1ddc7ea0fb63c0ccbdfed2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b18cfcb58320a9714e20ad3ec0de08d = $(`<div id="html_6b18cfcb58320a9714e20ad3ec0de08d" style="width: 100.0%; height: 100.0%;">Cemilenin Mutfağı<br>Güvenevler Mahallesi Mesnevi Sokak No:2 4/B Çankaya Çankaya ANKARA<br>3124240746.0</div>`)[0];
+                popup_07c6997cb1ddc7ea0fb63c0ccbdfed2a.setContent(html_6b18cfcb58320a9714e20ad3ec0de08d);
+            
+        
+
+        marker_0b01e3dd950324ce29c4c64d90ec807e.bindPopup(popup_07c6997cb1ddc7ea0fb63c0ccbdfed2a)
+        ;
+
+        
+    
+    
+                marker_0b01e3dd950324ce29c4c64d90ec807e.setIcon(icon_c4b3e9496e90f08cdd73655a4a6453b0);
+            
+    
+            var marker_fb685d7903cef1271ecbab94049b0d9c = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_2df30e11aa8abf1342dff50c9921e961 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_23e850f31626aca27e6b79e50dbe6499 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f6b44de27af60f4f3fc016d0b90a02b = $(`<div id="html_0f6b44de27af60f4f3fc016d0b90a02b" style="width: 100.0%; height: 100.0%;">C'viz<br>Barbaros Mah. Tunalı Hilmi Cad. No:114/D-E Kavaklıdere Çankaya ANKARA<br>3124664626.0</div>`)[0];
+                popup_23e850f31626aca27e6b79e50dbe6499.setContent(html_0f6b44de27af60f4f3fc016d0b90a02b);
+            
+        
+
+        marker_fb685d7903cef1271ecbab94049b0d9c.bindPopup(popup_23e850f31626aca27e6b79e50dbe6499)
+        ;
+
+        
+    
+    
+                marker_fb685d7903cef1271ecbab94049b0d9c.setIcon(icon_2df30e11aa8abf1342dff50c9921e961);
+            
+    
+            var marker_c87814eb228d3fad64a92b75e2e009f0 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_8b37844a104f6cb602bc8fb301b5c488 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_453c3bfc274c0c3cf98b335144aae237 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11d25efecbcb47179d9ec6f64b94eff6 = $(`<div id="html_11d25efecbcb47179d9ec6f64b94eff6" style="width: 100.0%; height: 100.0%;">Çatı Açık Büfe Bilkent Ünivers<br>Üniversiteler Mah. 1607 Cad. 81-82 Yurt ODTÜ Çankaya ANKARA<br>3121111111.0</div>`)[0];
+                popup_453c3bfc274c0c3cf98b335144aae237.setContent(html_11d25efecbcb47179d9ec6f64b94eff6);
+            
+        
+
+        marker_c87814eb228d3fad64a92b75e2e009f0.bindPopup(popup_453c3bfc274c0c3cf98b335144aae237)
+        ;
+
+        
+    
+    
+                marker_c87814eb228d3fad64a92b75e2e009f0.setIcon(icon_8b37844a104f6cb602bc8fb301b5c488);
+            
+    
+            var marker_e66e49eec5e0b16127990d7d6f13c04e = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_2a7f1591a3f989849d479ecbf2c7d8ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb79830dac6bc74902c4ce341bc0ee7c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b4e588540764294528abe48311482044 = $(`<div id="html_b4e588540764294528abe48311482044" style="width: 100.0%; height: 100.0%;">Çedene Ev Yemekleri<br>Balgat Mah. Ziya Bey Cad. No:59/A Balgat Çankaya ANKARA<br>3122850677.0</div>`)[0];
+                popup_bb79830dac6bc74902c4ce341bc0ee7c.setContent(html_b4e588540764294528abe48311482044);
+            
+        
+
+        marker_e66e49eec5e0b16127990d7d6f13c04e.bindPopup(popup_bb79830dac6bc74902c4ce341bc0ee7c)
+        ;
+
+        
+    
+    
+                marker_e66e49eec5e0b16127990d7d6f13c04e.setIcon(icon_2a7f1591a3f989849d479ecbf2c7d8ca);
+            
+    
+            var marker_fd3d82e2086e0dd44c7d6cc013852e2d = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_7452f69afad486340e1061ffd2c21a27 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1badde80a883235692aa77ff68d2e282 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f51ed90ec3d184ba1236162ff77ffb4 = $(`<div id="html_3f51ed90ec3d184ba1236162ff77ffb4" style="width: 100.0%; height: 100.0%;">Çiçek Lokantası<br>Söğütözü Mah. 2176 Sok. No:5/45-46 Söğütözü Çankaya ANKARA<br>3122843000.0</div>`)[0];
+                popup_1badde80a883235692aa77ff68d2e282.setContent(html_3f51ed90ec3d184ba1236162ff77ffb4);
+            
+        
+
+        marker_fd3d82e2086e0dd44c7d6cc013852e2d.bindPopup(popup_1badde80a883235692aa77ff68d2e282)
+        ;
+
+        
+    
+    
+                marker_fd3d82e2086e0dd44c7d6cc013852e2d.setIcon(icon_7452f69afad486340e1061ffd2c21a27);
+            
+    
+            var marker_39a6c21c44a648223dbf7a4bb70dcc62 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_e5db6d865a9a033e5f86dadd8fdc7a1b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6b5e4aa94eb6f8d9cb843e914191d44 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8bde620aabd5c74141ccf80d329b0021 = $(`<div id="html_8bde620aabd5c74141ccf80d329b0021" style="width: 100.0%; height: 100.0%;">Dengeli Cafe Restaurant<br>Bilkent Üniversitesi Merkez Kampüs   Bilkent ÜniverSitesi Merkez Kampüs Bilkent ÜniverSitesi Mah. Merkez Kampüsü 2. Cad. Bilkent Çankaya ANKARA<br>3122650530.0</div>`)[0];
+                popup_d6b5e4aa94eb6f8d9cb843e914191d44.setContent(html_8bde620aabd5c74141ccf80d329b0021);
+            
+        
+
+        marker_39a6c21c44a648223dbf7a4bb70dcc62.bindPopup(popup_d6b5e4aa94eb6f8d9cb843e914191d44)
+        ;
+
+        
+    
+    
+                marker_39a6c21c44a648223dbf7a4bb70dcc62.setIcon(icon_e5db6d865a9a033e5f86dadd8fdc7a1b);
+            
+    
+            var marker_30eb3a420e777d8624eae894703f1605 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_2e80c9802c9eb01cf41e885151bb4457 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_801c278a84d09677425a1778c2d734f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_513b62154ce27567b6940b1709bca8e1 = $(`<div id="html_513b62154ce27567b6940b1709bca8e1" style="width: 100.0%; height: 100.0%;">Denizatı Pastanesi<br>Mustafa Kemal Mah. Dumlupınar Cad. 280/G Çankaya Çankaya ANKARA<br>3121111111.0</div>`)[0];
+                popup_801c278a84d09677425a1778c2d734f1.setContent(html_513b62154ce27567b6940b1709bca8e1);
+            
+        
+
+        marker_30eb3a420e777d8624eae894703f1605.bindPopup(popup_801c278a84d09677425a1778c2d734f1)
+        ;
+
+        
+    
+    
+                marker_30eb3a420e777d8624eae894703f1605.setIcon(icon_2e80c9802c9eb01cf41e885151bb4457);
+            
+    
+            var marker_eb6f458d4a57136d4bdfbcfbbdfe5889 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_f453bba7d8d119b815c4ea9bf4f8e266 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_145e206a31e45943b0fbc93f2c088a4a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2139ac5a9c702f911aece00b9555258c = $(`<div id="html_2139ac5a9c702f911aece00b9555258c" style="width: 100.0%; height: 100.0%;">Dostlar Mantı Gözleme<br>Çiğdem Mah.1551 Cad.No:3/22 Seğmen İş Me Çankaya Çankaya ANKARA<br>3122841965.0</div>`)[0];
+                popup_145e206a31e45943b0fbc93f2c088a4a.setContent(html_2139ac5a9c702f911aece00b9555258c);
+            
+        
+
+        marker_eb6f458d4a57136d4bdfbcfbbdfe5889.bindPopup(popup_145e206a31e45943b0fbc93f2c088a4a)
+        ;
+
+        
+    
+    
+                marker_eb6f458d4a57136d4bdfbcfbbdfe5889.setIcon(icon_f453bba7d8d119b815c4ea9bf4f8e266);
+            
+    
+            var marker_49f840fcb4f24cee2d0f071dfc1f3f34 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_35015175236f986d8b180f22e1545026 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_40bfb3804caeab62230335c09d7efb4e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3772c370a82513a16568960f168c5dc = $(`<div id="html_e3772c370a82513a16568960f168c5dc" style="width: 100.0%; height: 100.0%;">Elizinn Restaurant<br>Tunalı Hilmi Cad. No:81/13-14-15-16-17-18 Kavaklıdere Çankaya ANKARA<br>3124274044.0</div>`)[0];
+                popup_40bfb3804caeab62230335c09d7efb4e.setContent(html_e3772c370a82513a16568960f168c5dc);
+            
+        
+
+        marker_49f840fcb4f24cee2d0f071dfc1f3f34.bindPopup(popup_40bfb3804caeab62230335c09d7efb4e)
+        ;
+
+        
+    
+    
+                marker_49f840fcb4f24cee2d0f071dfc1f3f34.setIcon(icon_35015175236f986d8b180f22e1545026);
+            
+    
+            var marker_727588e79f9ddc09a298a44f397c0cd5 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_ce1121595f37a20d32b4c8885012729f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e15b5569fa2ef2eb173124d45b7a1494 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd2b30b90de539777ad15cd95bd6bded = $(`<div id="html_bd2b30b90de539777ad15cd95bd6bded" style="width: 100.0%; height: 100.0%;">Esnaf Lokantası<br>Meşrutiyet Mah. Karanfil Sok. No:39/B Kızılay Çankaya ANKARA<br>3121111111.0</div>`)[0];
+                popup_e15b5569fa2ef2eb173124d45b7a1494.setContent(html_bd2b30b90de539777ad15cd95bd6bded);
+            
+        
+
+        marker_727588e79f9ddc09a298a44f397c0cd5.bindPopup(popup_e15b5569fa2ef2eb173124d45b7a1494)
+        ;
+
+        
+    
+    
+                marker_727588e79f9ddc09a298a44f397c0cd5.setIcon(icon_ce1121595f37a20d32b4c8885012729f);
+            
+    
+            var marker_12e503b13621525a84fe56dec753edf2 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_06b30ebc97aff35f9d22de7f003a401b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71e51eb9f8aea7ae15a8b928c7925f8a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e57b57de2b06775ecbdbad7c884029cb = $(`<div id="html_e57b57de2b06775ecbdbad7c884029cb" style="width: 100.0%; height: 100.0%;">Evdeyiz Ev Yemekleri<br>Mustafa Kemal Mah. 2120 Cad. No:33/A Mustafa Kemal Çankaya ANKARA<br>3122195656.0</div>`)[0];
+                popup_71e51eb9f8aea7ae15a8b928c7925f8a.setContent(html_e57b57de2b06775ecbdbad7c884029cb);
+            
+        
+
+        marker_12e503b13621525a84fe56dec753edf2.bindPopup(popup_71e51eb9f8aea7ae15a8b928c7925f8a)
+        ;
+
+        
+    
+    
+                marker_12e503b13621525a84fe56dec753edf2.setIcon(icon_06b30ebc97aff35f9d22de7f003a401b);
+            
+    
+            var marker_892df78d8216182fa962ee2361254a42 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_a52ccbefa700bcaa24c4aa30e3507de9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ba3f892c70083e0173b07b34ca1b565 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b833068f84c232ebf106df0e5a76eb9f = $(`<div id="html_b833068f84c232ebf106df0e5a76eb9f" style="width: 100.0%; height: 100.0%;">Filiz Kültür Kafe<br>Cumhuriyet Mah. Bayındır 1 Sok. No:23/B Çankaya Çankaya ANKARA<br>3123277222.0</div>`)[0];
+                popup_3ba3f892c70083e0173b07b34ca1b565.setContent(html_b833068f84c232ebf106df0e5a76eb9f);
+            
+        
+
+        marker_892df78d8216182fa962ee2361254a42.bindPopup(popup_3ba3f892c70083e0173b07b34ca1b565)
+        ;
+
+        
+    
+    
+                marker_892df78d8216182fa962ee2361254a42.setIcon(icon_a52ccbefa700bcaa24c4aa30e3507de9);
+            
+    
+            var marker_002df1cbdbaa85adfe460cf836cfaa15 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_4b0fee5912b8f9137d877a7ed73889a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75e827e892e70aef8c48b756079e893b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29b9f0324dee6c3e74edb6857f594849 = $(`<div id="html_29b9f0324dee6c3e74edb6857f594849" style="width: 100.0%; height: 100.0%;">Gaziantepli Tabldot Yemek Lokantası<br>Gazi Mustafa Kemal Bul. No:42/A Maltepe Çankaya ANKARA<br>3122292617.0</div>`)[0];
+                popup_75e827e892e70aef8c48b756079e893b.setContent(html_29b9f0324dee6c3e74edb6857f594849);
+            
+        
+
+        marker_002df1cbdbaa85adfe460cf836cfaa15.bindPopup(popup_75e827e892e70aef8c48b756079e893b)
+        ;
+
+        
+    
+    
+                marker_002df1cbdbaa85adfe460cf836cfaa15.setIcon(icon_4b0fee5912b8f9137d877a7ed73889a8);
+            
+    
+            var marker_635b41dfa123bd4dc862c5157f533c24 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_d8f206fd7681b58ee4308965ae21d455 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_416566872097e88fd1b07aaa82d24033 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70a2195d252be0bc227830506aa0b30d = $(`<div id="html_70a2195d252be0bc227830506aa0b30d" style="width: 100.0%; height: 100.0%;">Gel De Yeme<br>Kızılırmak Mah. Ufuk Üniversitesi Cad. N o:18/9 Kızılırmak Çankaya ANKARA<br>3122680647.0</div>`)[0];
+                popup_416566872097e88fd1b07aaa82d24033.setContent(html_70a2195d252be0bc227830506aa0b30d);
+            
+        
+
+        marker_635b41dfa123bd4dc862c5157f533c24.bindPopup(popup_416566872097e88fd1b07aaa82d24033)
+        ;
+
+        
+    
+    
+                marker_635b41dfa123bd4dc862c5157f533c24.setIcon(icon_d8f206fd7681b58ee4308965ae21d455);
+            
+    
+            var marker_fb111b752e03cf4b09996a7f2b9c96fd = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_7f2fa326933dec1b07d34ab80ceec560 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71094141feba01bc400471c7443e8847 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8beea7538ef9588c6a7d1d0a47d7bac6 = $(`<div id="html_8beea7538ef9588c6a7d1d0a47d7bac6" style="width: 100.0%; height: 100.0%;">Güldür Ev Yemekleri<br>Kültür Mah. Ziya Gökalp Cad. Çaldıran Sok. Kızılay Çankaya ANKARA<br>3124317778.0</div>`)[0];
+                popup_71094141feba01bc400471c7443e8847.setContent(html_8beea7538ef9588c6a7d1d0a47d7bac6);
+            
+        
+
+        marker_fb111b752e03cf4b09996a7f2b9c96fd.bindPopup(popup_71094141feba01bc400471c7443e8847)
+        ;
+
+        
+    
+    
+                marker_fb111b752e03cf4b09996a7f2b9c96fd.setIcon(icon_7f2fa326933dec1b07d34ab80ceec560);
+            
+    
+            var marker_0806f405e96942cd3231fe6adc935e46 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_62be1fb54f92c16300e593a84a2e34c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf1ab4ff2b6cb0eaa217406f73fc9536 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9fa4d5332d75233c132732bc5114825a = $(`<div id="html_9fa4d5332d75233c132732bc5114825a" style="width: 100.0%; height: 100.0%;">Jale Türk Mutfağı<br>Barbaros Mah. Bülten Sok. No:1/C Kavaklıdere Çankaya ANKARA<br>3124661017.0</div>`)[0];
+                popup_bf1ab4ff2b6cb0eaa217406f73fc9536.setContent(html_9fa4d5332d75233c132732bc5114825a);
+            
+        
+
+        marker_0806f405e96942cd3231fe6adc935e46.bindPopup(popup_bf1ab4ff2b6cb0eaa217406f73fc9536)
+        ;
+
+        
+    
+    
+                marker_0806f405e96942cd3231fe6adc935e46.setIcon(icon_62be1fb54f92c16300e593a84a2e34c6);
+            
+    
+            var marker_dbdd34a86c7d460378d38ac0ed5a6df5 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_ca5eca313ab185957a2e973c0dc9541d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_145f03b7323c9820d3f4be4f4145f886 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87679cdf20538470efb1233eec6030c8 = $(`<div id="html_87679cdf20538470efb1233eec6030c8" style="width: 100.0%; height: 100.0%;">Kayseri Mutfağı<br>PaNora AVM Turan Güneş Bul. No:182 Or-An Çankaya ANKARA<br>3121111111.0</div>`)[0];
+                popup_145f03b7323c9820d3f4be4f4145f886.setContent(html_87679cdf20538470efb1233eec6030c8);
+            
+        
+
+        marker_dbdd34a86c7d460378d38ac0ed5a6df5.bindPopup(popup_145f03b7323c9820d3f4be4f4145f886)
+        ;
+
+        
+    
+    
+                marker_dbdd34a86c7d460378d38ac0ed5a6df5.setIcon(icon_ca5eca313ab185957a2e973c0dc9541d);
+            
+    
+            var marker_5b4b214bda32fb2d5536e815924a311b = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_26eae0b9a14ea905af4960b004b48852 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e560a974b1f77fdb62351178bc8d6ed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e18b95dca0616a980cd590535e00b9f2 = $(`<div id="html_e18b95dca0616a980cd590535e00b9f2" style="width: 100.0%; height: 100.0%;">Keffçe<br>Kızılırmak Mah. 1443. Sok. No:51/B Çukuranbar Çankaya ANKARA<br>3122861068.0</div>`)[0];
+                popup_3e560a974b1f77fdb62351178bc8d6ed.setContent(html_e18b95dca0616a980cd590535e00b9f2);
+            
+        
+
+        marker_5b4b214bda32fb2d5536e815924a311b.bindPopup(popup_3e560a974b1f77fdb62351178bc8d6ed)
+        ;
+
+        
+    
+    
+                marker_5b4b214bda32fb2d5536e815924a311b.setIcon(icon_26eae0b9a14ea905af4960b004b48852);
+            
+    
+            var marker_e0ef9bc47c8b2262d4005dcf804eff75 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_cb1ea35c4d9beeb431e590cb2c64eb4b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11ed97272fcae05fb0cb451860ad4f97 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d5308ea32da350290cb8ae31475488e = $(`<div id="html_5d5308ea32da350290cb8ae31475488e" style="width: 100.0%; height: 100.0%;">Kişniş Anadolu Lezzetleri<br>Kuzu Efect Avm. Oran Mah. Zülfü Tiğer Ca Çankaya Çankaya ANKARA<br>3121111111.0</div>`)[0];
+                popup_11ed97272fcae05fb0cb451860ad4f97.setContent(html_5d5308ea32da350290cb8ae31475488e);
+            
+        
+
+        marker_e0ef9bc47c8b2262d4005dcf804eff75.bindPopup(popup_11ed97272fcae05fb0cb451860ad4f97)
+        ;
+
+        
+    
+    
+                marker_e0ef9bc47c8b2262d4005dcf804eff75.setIcon(icon_cb1ea35c4d9beeb431e590cb2c64eb4b);
+            
+    
+            var marker_e6baab772b05fa25ff177ee7f3877ce4 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_d5e5f71ae8fccb2ce0ec8283fc9b62ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e17831a44f6b4432edeb36a51feb4fe6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c655a9936aa5ded3c0ca51a3cfc1d3bc = $(`<div id="html_c655a9936aa5ded3c0ca51a3cfc1d3bc" style="width: 100.0%; height: 100.0%;">Konakbay<br>Taurus Avm. İşçi Blokları Mah. Mevlana B Çankaya Çankaya ANKARA<br>3121111111.0</div>`)[0];
+                popup_e17831a44f6b4432edeb36a51feb4fe6.setContent(html_c655a9936aa5ded3c0ca51a3cfc1d3bc);
+            
+        
+
+        marker_e6baab772b05fa25ff177ee7f3877ce4.bindPopup(popup_e17831a44f6b4432edeb36a51feb4fe6)
+        ;
+
+        
+    
+    
+                marker_e6baab772b05fa25ff177ee7f3877ce4.setIcon(icon_d5e5f71ae8fccb2ce0ec8283fc9b62ad);
+            
+    
+            var marker_570fc19c7a4853892537b439e0148215 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_15741cd0dc6859dd8483fa180e5aa36c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_820da99ec1454b46c86f94a29d1768de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68eb534e8fddf75ac543e84d50ff367c = $(`<div id="html_68eb534e8fddf75ac543e84d50ff367c" style="width: 100.0%; height: 100.0%;">Köpoğlu<br>Aşağı Öveçler Mah. 1322 Cad. No:8/A Çankaya Çankaya ANKARA<br>3124824209.0</div>`)[0];
+                popup_820da99ec1454b46c86f94a29d1768de.setContent(html_68eb534e8fddf75ac543e84d50ff367c);
+            
+        
+
+        marker_570fc19c7a4853892537b439e0148215.bindPopup(popup_820da99ec1454b46c86f94a29d1768de)
+        ;
+
+        
+    
+    
+                marker_570fc19c7a4853892537b439e0148215.setIcon(icon_15741cd0dc6859dd8483fa180e5aa36c);
+            
+    
+            var marker_6af96f20e4b5800b684f135ed0acaf86 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_cca49c34efb83cf1a71010071e8bb897 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fc538e300dd0cb0c360e6f79f01a6c1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11cbff757ad24baaaf79c221db12d07c = $(`<div id="html_11cbff757ad24baaaf79c221db12d07c" style="width: 100.0%; height: 100.0%;">Küre Ev Yemekleri<br>Ehlibeyt Mah. Ceyhun Atıf Kansu Cad. No: Çankaya Çankaya ANKARA<br>3124737311.0</div>`)[0];
+                popup_fc538e300dd0cb0c360e6f79f01a6c1d.setContent(html_11cbff757ad24baaaf79c221db12d07c);
+            
+        
+
+        marker_6af96f20e4b5800b684f135ed0acaf86.bindPopup(popup_fc538e300dd0cb0c360e6f79f01a6c1d)
+        ;
+
+        
+    
+    
+                marker_6af96f20e4b5800b684f135ed0acaf86.setIcon(icon_cca49c34efb83cf1a71010071e8bb897);
+            
+    
+            var marker_ecceed0abb16693994aab1dc4d78ca7f = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_8079c14e772ff22bca2366409db8f2e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33451ead34854d5f64c437cef29f760f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fac327e42ffe9377b1321d2ce692f0bc = $(`<div id="html_fac327e42ffe9377b1321d2ce692f0bc" style="width: 100.0%; height: 100.0%;">Lalanga Ev Yemekleri<br>Aziziye Mah. Cinnah Cad. Willy Brant Sok. No:3/13 Çankaya Çankaya ANKARA<br>3124397358.0</div>`)[0];
+                popup_33451ead34854d5f64c437cef29f760f.setContent(html_fac327e42ffe9377b1321d2ce692f0bc);
+            
+        
+
+        marker_ecceed0abb16693994aab1dc4d78ca7f.bindPopup(popup_33451ead34854d5f64c437cef29f760f)
+        ;
+
+        
+    
+    
+                marker_ecceed0abb16693994aab1dc4d78ca7f.setIcon(icon_8079c14e772ff22bca2366409db8f2e2);
+            
+    
+            var marker_3986a11674ec04b665e4dc2f00eeab21 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_1f2c42646b490f70aedc48c08043036d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_059582d267807ecb5f12778672957917 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a2f0ad937c8e24cf80c10f8cbf7361f = $(`<div id="html_0a2f0ad937c8e24cf80c10f8cbf7361f" style="width: 100.0%; height: 100.0%;">Meal Up<br>Kentpark Avm. Eskişehir Yolu 7. Km No:16 Çankaya Çankaya ANKARA<br>3126067280.0</div>`)[0];
+                popup_059582d267807ecb5f12778672957917.setContent(html_0a2f0ad937c8e24cf80c10f8cbf7361f);
+            
+        
+
+        marker_3986a11674ec04b665e4dc2f00eeab21.bindPopup(popup_059582d267807ecb5f12778672957917)
+        ;
+
+        
+    
+    
+                marker_3986a11674ec04b665e4dc2f00eeab21.setIcon(icon_1f2c42646b490f70aedc48c08043036d);
+            
+    
+            var marker_fa1682c86e263a1c62b9c6dbd885b3c7 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_a908f38768e913f0860a1d503823d34d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64604cddc5fbfa23832fa46bd8ffd974 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_772751f937abde565d264ea1e3be75a8 = $(`<div id="html_772751f937abde565d264ea1e3be75a8" style="width: 100.0%; height: 100.0%;">Meygede Restaurant<br>Güzeltepe Mah. Simon Bolivar Cad. Ahmet Mithat Efendi Sok. No:5/A Çankaya Çankaya ANKARA<br>3124394696.0</div>`)[0];
+                popup_64604cddc5fbfa23832fa46bd8ffd974.setContent(html_772751f937abde565d264ea1e3be75a8);
+            
+        
+
+        marker_fa1682c86e263a1c62b9c6dbd885b3c7.bindPopup(popup_64604cddc5fbfa23832fa46bd8ffd974)
+        ;
+
+        
+    
+    
+                marker_fa1682c86e263a1c62b9c6dbd885b3c7.setIcon(icon_a908f38768e913f0860a1d503823d34d);
+            
+    
+            var marker_60a763e3a9c4d5fd230b43b5fc72d661 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_b07e2a57b4532f4329a38a5ed88f2430 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9de38a2700bbda0198865007c39d2dce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_622f035f861ef3222541677f13250c39 = $(`<div id="html_622f035f861ef3222541677f13250c39" style="width: 100.0%; height: 100.0%;">Nadir Pide Kebap<br>Sağlık Mah. Sağlık Sok. No:9/A Çankaya Çankaya ANKARA<br>3120137476.0</div>`)[0];
+                popup_9de38a2700bbda0198865007c39d2dce.setContent(html_622f035f861ef3222541677f13250c39);
+            
+        
+
+        marker_60a763e3a9c4d5fd230b43b5fc72d661.bindPopup(popup_9de38a2700bbda0198865007c39d2dce)
+        ;
+
+        
+    
+    
+                marker_60a763e3a9c4d5fd230b43b5fc72d661.setIcon(icon_b07e2a57b4532f4329a38a5ed88f2430);
+            
+    
+            var marker_ece3b0b58521a20547be1d7a4b016fb3 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_ae02753396053839d573fe8adf69f782 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f63be0b4242602cb11377e606587b39 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_805b4e338f31eea363d5fd326006b01e = $(`<div id="html_805b4e338f31eea363d5fd326006b01e" style="width: 100.0%; height: 100.0%;">Newcastle<br>Koru Mah.Ihlamur Cad.Mesa Plaza No:2/42 Çankaya Çankaya ANKARA<br>3125028358.0</div>`)[0];
+                popup_0f63be0b4242602cb11377e606587b39.setContent(html_805b4e338f31eea363d5fd326006b01e);
+            
+        
+
+        marker_ece3b0b58521a20547be1d7a4b016fb3.bindPopup(popup_0f63be0b4242602cb11377e606587b39)
+        ;
+
+        
+    
+    
+                marker_ece3b0b58521a20547be1d7a4b016fb3.setIcon(icon_ae02753396053839d573fe8adf69f782);
+            
+    
+            var marker_cee5e69413e0ddf19a6f5b0fc61adc28 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_440e7b5d2028925a57cbccc285d9fcfb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ffb74f97d2dda9a41a2b81117fb20d99 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_10c2a7e67e699d2c5298677ecbf51064 = $(`<div id="html_10c2a7e67e699d2c5298677ecbf51064" style="width: 100.0%; height: 100.0%;">Nezo'nun Mutfağı<br>Ankara Optimum AVM   Ankara Optimum AVM Kızılırmak Mah. 1445 Sok. A2 Blok No:13-14 Çukuranbar Çankaya ANKARA<br>3122810956.0</div>`)[0];
+                popup_ffb74f97d2dda9a41a2b81117fb20d99.setContent(html_10c2a7e67e699d2c5298677ecbf51064);
+            
+        
+
+        marker_cee5e69413e0ddf19a6f5b0fc61adc28.bindPopup(popup_ffb74f97d2dda9a41a2b81117fb20d99)
+        ;
+
+        
+    
+    
+                marker_cee5e69413e0ddf19a6f5b0fc61adc28.setIcon(icon_440e7b5d2028925a57cbccc285d9fcfb);
+            
+    
+            var marker_0669fa2b87edc4f998d91ead4754b2de = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_36e5482df57df31a0dd473811e3593d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_755cba6294d708661fb9d37368517467 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51ee8dbdeb88ed0c5f05f835e23b5cce = $(`<div id="html_51ee8dbdeb88ed0c5f05f835e23b5cce" style="width: 100.0%; height: 100.0%;">Nil's Artisan Bakery<br>Mutlukent Mah. 1943 Cad. No:7/2 Çankaya Çankaya ANKARA<br>3121111111.0</div>`)[0];
+                popup_755cba6294d708661fb9d37368517467.setContent(html_51ee8dbdeb88ed0c5f05f835e23b5cce);
+            
+        
+
+        marker_0669fa2b87edc4f998d91ead4754b2de.bindPopup(popup_755cba6294d708661fb9d37368517467)
+        ;
+
+        
+    
+    
+                marker_0669fa2b87edc4f998d91ead4754b2de.setIcon(icon_36e5482df57df31a0dd473811e3593d7);
+            
+    
+            var marker_619d68b821cfccd84c6111f61ce2625c = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_d36f2e56a71d36a85fea7341eeb579b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da60b86686dd83151384d85fd9ef517b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27cb311d987e3a9992b67ba53b8726df = $(`<div id="html_27cb311d987e3a9992b67ba53b8726df" style="width: 100.0%; height: 100.0%;">Nindas Cafe<br>Üniversiteler Mah. Ş. Mustafa Tayyarcan Bilkent Çankaya ANKARA<br>3121111111.0</div>`)[0];
+                popup_da60b86686dd83151384d85fd9ef517b.setContent(html_27cb311d987e3a9992b67ba53b8726df);
+            
+        
+
+        marker_619d68b821cfccd84c6111f61ce2625c.bindPopup(popup_da60b86686dd83151384d85fd9ef517b)
+        ;
+
+        
+    
+    
+                marker_619d68b821cfccd84c6111f61ce2625c.setIcon(icon_d36f2e56a71d36a85fea7341eeb579b3);
+            
+    
+            var marker_ff28721d1936aec22ac4274882e6d046 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_388eeb333d75aebce9f852280d0243a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c25c6a4536de241e4016165b9ca0c5a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ef852499afed7a9caebe4e909ab147c = $(`<div id="html_8ef852499afed7a9caebe4e909ab147c" style="width: 100.0%; height: 100.0%;">ORHAN ASPAVA<br>Kocatepe Mah. Selanik 2 Cad. No:19/C Kızılay Çankaya ANKARA<br>3124180039.0</div>`)[0];
+                popup_c25c6a4536de241e4016165b9ca0c5a4.setContent(html_8ef852499afed7a9caebe4e909ab147c);
+            
+        
+
+        marker_ff28721d1936aec22ac4274882e6d046.bindPopup(popup_c25c6a4536de241e4016165b9ca0c5a4)
+        ;
+
+        
+    
+    
+                marker_ff28721d1936aec22ac4274882e6d046.setIcon(icon_388eeb333d75aebce9f852280d0243a9);
+            
+    
+            var marker_68daef2ad0ed56fc800165ec616f86b7 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_0ad98fc500bcf82d576b35df716dbbe2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6661533034f05047ff7fff525a36ee20 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20a392c071d273711740ce015e20b855 = $(`<div id="html_20a392c071d273711740ce015e20b855" style="width: 100.0%; height: 100.0%;">Öğütler<br>GMK Bul. No:53/B Maltepe Çankaya ANKARA<br>3122317802.0</div>`)[0];
+                popup_6661533034f05047ff7fff525a36ee20.setContent(html_20a392c071d273711740ce015e20b855);
+            
+        
+
+        marker_68daef2ad0ed56fc800165ec616f86b7.bindPopup(popup_6661533034f05047ff7fff525a36ee20)
+        ;
+
+        
+    
+    
+                marker_68daef2ad0ed56fc800165ec616f86b7.setIcon(icon_0ad98fc500bcf82d576b35df716dbbe2);
+            
+    
+            var marker_cbfd0ea2c6382d7da2ab79c7d09a7085 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_e06c45fbef92ffc97993d68a32cac022 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb425e061569da66ca0c3e1461d0441a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5344a8c6763f125be77bb03aa0e3751e = $(`<div id="html_5344a8c6763f125be77bb03aa0e3751e" style="width: 100.0%; height: 100.0%;">Öğütler<br>Tunalı Hilmi Cad. No:48/A Kavaklıdere Çankaya ANKARA<br>3124684306.0</div>`)[0];
+                popup_cb425e061569da66ca0c3e1461d0441a.setContent(html_5344a8c6763f125be77bb03aa0e3751e);
+            
+        
+
+        marker_cbfd0ea2c6382d7da2ab79c7d09a7085.bindPopup(popup_cb425e061569da66ca0c3e1461d0441a)
+        ;
+
+        
+    
+    
+                marker_cbfd0ea2c6382d7da2ab79c7d09a7085.setIcon(icon_e06c45fbef92ffc97993d68a32cac022);
+            
+    
+            var marker_8b77b1a41707213e733124d143d14281 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_39ecc1f6b23e626060676a17c9258ea1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0b251b903f78e091133ca97658aea86 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7c3633047b6fafc61058f1668ecbc6e = $(`<div id="html_a7c3633047b6fafc61058f1668ecbc6e" style="width: 100.0%; height: 100.0%;">Paşa Konağı<br>Kavaklıdere Mah. Büklüm Cad. No:7/B Çankaya Çankaya ANKARA<br>3122560256.0</div>`)[0];
+                popup_a0b251b903f78e091133ca97658aea86.setContent(html_a7c3633047b6fafc61058f1668ecbc6e);
+            
+        
+
+        marker_8b77b1a41707213e733124d143d14281.bindPopup(popup_a0b251b903f78e091133ca97658aea86)
+        ;
+
+        
+    
+    
+                marker_8b77b1a41707213e733124d143d14281.setIcon(icon_39ecc1f6b23e626060676a17c9258ea1);
+            
+    
+            var marker_e37d9436104f079b22e056b77862b531 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_c4612f07e34bb8c678a51346085aaa5e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_94f9d762bc37c59ee5372b53b81e7174 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4bcbd454e8e153573299c1adf52a215f = $(`<div id="html_4bcbd454e8e153573299c1adf52a215f" style="width: 100.0%; height: 100.0%;">Patika Cafe Restaurant<br>Ehlibeyt Mah. Ceyhun Atıf Kansu Cad. No: Balgat Çankaya ANKARA<br>3121111111.0</div>`)[0];
+                popup_94f9d762bc37c59ee5372b53b81e7174.setContent(html_4bcbd454e8e153573299c1adf52a215f);
+            
+        
+
+        marker_e37d9436104f079b22e056b77862b531.bindPopup(popup_94f9d762bc37c59ee5372b53b81e7174)
+        ;
+
+        
+    
+    
+                marker_e37d9436104f079b22e056b77862b531.setIcon(icon_c4612f07e34bb8c678a51346085aaa5e);
+            
+    
+            var marker_c12f3be3a8d0f17493c0e0f0a89b05f8 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_f48a6ddf0a18a8d5ac595fedfa16c0d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8090a837b1a54c29b85861c7f7f5fffc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_128ae00d5a4870b4d807b35980c14c6f = $(`<div id="html_128ae00d5a4870b4d807b35980c14c6f" style="width: 100.0%; height: 100.0%;">Rumeli İşkembecisi<br>Remzi Oğuz Arık Mah. Bestekar Sok. No:86/B Kavaklıdere Çankaya ANKARA<br>3124671362.0</div>`)[0];
+                popup_8090a837b1a54c29b85861c7f7f5fffc.setContent(html_128ae00d5a4870b4d807b35980c14c6f);
+            
+        
+
+        marker_c12f3be3a8d0f17493c0e0f0a89b05f8.bindPopup(popup_8090a837b1a54c29b85861c7f7f5fffc)
+        ;
+
+        
+    
+    
+                marker_c12f3be3a8d0f17493c0e0f0a89b05f8.setIcon(icon_f48a6ddf0a18a8d5ac595fedfa16c0d7);
+            
+    
+            var marker_9271583744707ee45c633a4d6fab8de8 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_40686b99e8fe9d513cb112eb369a7e62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c53c1e2fef63da4e30fa9862cd4443c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a152f00d4ca17cc29f2d49c3642b0ae1 = $(`<div id="html_a152f00d4ca17cc29f2d49c3642b0ae1" style="width: 100.0%; height: 100.0%;">Rumeli İşkembecisi<br>Cumhuriyet Mah. Bayındır Sok. Çankaya Çankaya ANKARA<br>3122200831.0</div>`)[0];
+                popup_4c53c1e2fef63da4e30fa9862cd4443c.setContent(html_a152f00d4ca17cc29f2d49c3642b0ae1);
+            
+        
+
+        marker_9271583744707ee45c633a4d6fab8de8.bindPopup(popup_4c53c1e2fef63da4e30fa9862cd4443c)
+        ;
+
+        
+    
+    
+                marker_9271583744707ee45c633a4d6fab8de8.setIcon(icon_40686b99e8fe9d513cb112eb369a7e62);
+            
+    
+            var marker_4f3868dc3923bfa12cf5b4ecae014419 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_c5fb9726ba06aa986a6f83a499c3f45c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28b549076bd6dab3b69dfe0111994546 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1de26a5d5369e71cb09f0392350cf323 = $(`<div id="html_1de26a5d5369e71cb09f0392350cf323" style="width: 100.0%; height: 100.0%;">Sake China<br>Esatoğlu Mah. Yaprak Sok. No:2/D Esatoğlu Çankaya ANKARA<br>3124181999.0</div>`)[0];
+                popup_28b549076bd6dab3b69dfe0111994546.setContent(html_1de26a5d5369e71cb09f0392350cf323);
+            
+        
+
+        marker_4f3868dc3923bfa12cf5b4ecae014419.bindPopup(popup_28b549076bd6dab3b69dfe0111994546)
+        ;
+
+        
+    
+    
+                marker_4f3868dc3923bfa12cf5b4ecae014419.setIcon(icon_c5fb9726ba06aa986a6f83a499c3f45c);
+            
+    
+            var marker_d9b97c60327fd3b5b2ea28659b194293 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_f8295f22d8e514049291a683054b0f24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aca0b99d34cd6f1a354415bc4b88efca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f56fe0ebbe6eae6555ec26e2d9ed33ad = $(`<div id="html_f56fe0ebbe6eae6555ec26e2d9ed33ad" style="width: 100.0%; height: 100.0%;">Sofa Cafe Restaurant<br>Bilkent Üniversitesi Merkez Kampüs   Bilkent ÜniverSitesi Merkez Kampüs Yurt Kafeteryası 69-70 Bilkent Çankaya ANKARA<br>3122904014.0</div>`)[0];
+                popup_aca0b99d34cd6f1a354415bc4b88efca.setContent(html_f56fe0ebbe6eae6555ec26e2d9ed33ad);
+            
+        
+
+        marker_d9b97c60327fd3b5b2ea28659b194293.bindPopup(popup_aca0b99d34cd6f1a354415bc4b88efca)
+        ;
+
+        
+    
+    
+                marker_d9b97c60327fd3b5b2ea28659b194293.setIcon(icon_f8295f22d8e514049291a683054b0f24);
+            
+    
+            var marker_8a01b90e1c254de5c50a06726bb8d7d8 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_f78e393c442c94c15af649ec9c0e02e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_22026538353ebc460271433d349de216 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9acb547ecde8c99598e240939ce74392 = $(`<div id="html_9acb547ecde8c99598e240939ce74392" style="width: 100.0%; height: 100.0%;">Şeker Anadolu Mutfağı<br>Meşrutiyet Mah. Karanfil Sok. No:59/A Çankaya Çankaya ANKARA<br>3124193751.0</div>`)[0];
+                popup_22026538353ebc460271433d349de216.setContent(html_9acb547ecde8c99598e240939ce74392);
+            
+        
+
+        marker_8a01b90e1c254de5c50a06726bb8d7d8.bindPopup(popup_22026538353ebc460271433d349de216)
+        ;
+
+        
+    
+    
+                marker_8a01b90e1c254de5c50a06726bb8d7d8.setIcon(icon_f78e393c442c94c15af649ec9c0e02e9);
+            
+    
+            var marker_a24fc343ef41e049855c3ba300ff925b = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_a94b98f1a57fd6b43ea16801fde3284b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_439874520a89b618b014a8c0a21ecbc0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_22266ed6583da4277f21e5245f13945b = $(`<div id="html_22266ed6583da4277f21e5245f13945b" style="width: 100.0%; height: 100.0%;">Taka Karaedeniz Mutfagi<br>Yaşam Cad. Söğütözü Mah. Akplaza Altı No Çankaya Çankaya ANKARA<br>3122378802.0</div>`)[0];
+                popup_439874520a89b618b014a8c0a21ecbc0.setContent(html_22266ed6583da4277f21e5245f13945b);
+            
+        
+
+        marker_a24fc343ef41e049855c3ba300ff925b.bindPopup(popup_439874520a89b618b014a8c0a21ecbc0)
+        ;
+
+        
+    
+    
+                marker_a24fc343ef41e049855c3ba300ff925b.setIcon(icon_a94b98f1a57fd6b43ea16801fde3284b);
+            
+    
+            var marker_aeacd7d6a64188ba52dee9c107ce2f99 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_cbea4fdc60a70526c19e165fcda16e2b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_069fa1a00ab0db2fc3c81e0e9f7099e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0a43ab9d4707a004ddeb6d82d06d7df = $(`<div id="html_c0a43ab9d4707a004ddeb6d82d06d7df" style="width: 100.0%; height: 100.0%;">Tarihi Mutfak Lokantası<br>Fidanlık Mah. Sakarya Cad. Kızılay Çankaya ANKARA<br>3124187803.0</div>`)[0];
+                popup_069fa1a00ab0db2fc3c81e0e9f7099e0.setContent(html_c0a43ab9d4707a004ddeb6d82d06d7df);
+            
+        
+
+        marker_aeacd7d6a64188ba52dee9c107ce2f99.bindPopup(popup_069fa1a00ab0db2fc3c81e0e9f7099e0)
+        ;
+
+        
+    
+    
+                marker_aeacd7d6a64188ba52dee9c107ce2f99.setIcon(icon_cbea4fdc60a70526c19e165fcda16e2b);
+            
+    
+            var marker_44bb79cb07c31a5e2c1ca01c6407bda1 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_cd62c4abf557f13143327153d5dfe40d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_22b34e9cfc4e71b4d0f5d82e26b70d5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae387b88a992326f2cb24dc2abaa19fa = $(`<div id="html_ae387b88a992326f2cb24dc2abaa19fa" style="width: 100.0%; height: 100.0%;">Taze Türk Mutfağı<br>Çankaya Mah.Cinnah Cad.No:21/B Çankaya Çankaya ANKARA<br>3124539716.0</div>`)[0];
+                popup_22b34e9cfc4e71b4d0f5d82e26b70d5d.setContent(html_ae387b88a992326f2cb24dc2abaa19fa);
+            
+        
+
+        marker_44bb79cb07c31a5e2c1ca01c6407bda1.bindPopup(popup_22b34e9cfc4e71b4d0f5d82e26b70d5d)
+        ;
+
+        
+    
+    
+                marker_44bb79cb07c31a5e2c1ca01c6407bda1.setIcon(icon_cd62c4abf557f13143327153d5dfe40d);
+            
+    
+            var marker_e6115c96c190297be0753fd46a52c0db = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_bc45076fc34498b11a81cb4a4862bd6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_53f8688fc820b46834320a048ebac275 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1cf0ec8eb98339a257fd15f2c20d32d = $(`<div id="html_d1cf0ec8eb98339a257fd15f2c20d32d" style="width: 100.0%; height: 100.0%;">Tencere Ev Yemekleri<br>100. Yıl Mah. Reşit Galip Han Sok. No:8 Gaziosmanpaşa Çankaya ANKARA<br>3124375066.0</div>`)[0];
+                popup_53f8688fc820b46834320a048ebac275.setContent(html_d1cf0ec8eb98339a257fd15f2c20d32d);
+            
+        
+
+        marker_e6115c96c190297be0753fd46a52c0db.bindPopup(popup_53f8688fc820b46834320a048ebac275)
+        ;
+
+        
+    
+    
+                marker_e6115c96c190297be0753fd46a52c0db.setIcon(icon_bc45076fc34498b11a81cb4a4862bd6b);
+            
+    
+            var marker_e6b02cb773c870fc4985216b64dbd8f8 = L.marker(
+                [39.945993745239015, 32.88256459398962],
+                {
+}
+            ).addTo(map_c557c0f9a06cb8ed861eb25d1389a91e);
+        
+    
+            var icon_c55b1a104f0463c166d1136e89426b36 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f61ede18d3ea5ac7714c8d769ee52e03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb091f07a1b06f8313e686718594f9c7 = $(`<div id="html_fb091f07a1b06f8313e686718594f9c7" style="width: 100.0%; height: 100.0%;">Zula Yemek<br>Mustafa Kemal Mah. Dumlupınar Mah. No:280/D Çankaya Çankaya ANKARA<br>3120351002.0</div>`)[0];
+                popup_f61ede18d3ea5ac7714c8d769ee52e03.setContent(html_fb091f07a1b06f8313e686718594f9c7);
+            
+        
+
+        marker_e6b02cb773c870fc4985216b64dbd8f8.bindPopup(popup_f61ede18d3ea5ac7714c8d769ee52e03)
+        ;
+
+        
+    
+    
+                marker_e6b02cb773c870fc4985216b64dbd8f8.setIcon(icon_c55b1a104f0463c166d1136e89426b36);
+            
+</script>
+</html>
